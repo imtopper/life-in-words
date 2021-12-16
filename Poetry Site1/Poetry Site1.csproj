@@ -218,6 +218,7 @@
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\style.css" />
     <Content Include="Daily_Posts.aspx" />
+    <Content Include="Extra_Image\treeword.svg" />
     <Content Include="favicon\favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Home.aspx" />

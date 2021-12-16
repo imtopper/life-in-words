@@ -89,11 +89,13 @@ header .navbar-form .form-control {
 	border: 1px solid #767070;
 	border-radius: 4px;
 }
-
+.img-tree{
+	width:500px;
+	height:500px;
+}
 /*
  * main area
  */
- 
 .main-content {
 	padding-top: 100px;
 	padding-bottom: 100px;

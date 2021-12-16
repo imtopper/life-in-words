@@ -300,9 +300,39 @@
 				
 			</div>
 			<div class="container">
-				<center>
-				     <img class="img-responsive" src="Extra_Image/tree.png" alt="Missing Tree Image" />
-				</center>
+				<div class="row" style="margin-bottom:40px;">
+					<div class="col-sm-8">
+						<center>
+						<img class="img-tree" src="Extra_Image/treeword.svg" alt="Missing Tree Image" />
+
+						</center>
+					</div>
+					<div class="col-sm-4">
+						<!-- Contact Page -->
+						<form style="height: 300px;max-width: 400px; margin-top:60px; border: 4px solid #607d8b2b;
+    border-radius: 20px;
+    background-color: #c8ffc9;
+    padding: 20px;
+    margin-bottom: 50px;">
+						  <div class="mb-3" style="margin-bottom: 20px;">
+							<label for="exampleInputEmail1" class="form-label">Email address</label>
+							<input type="text" style="border-radius: 8px;" class="form-control" id="exampleInputEmail1" >
+							
+						  </div>
+						  
+						  <div class="form-floating mb-3">
+							  <label for="exampleInputEmail1" class="form-label">Write Something</label>
+  <textarea class="form-control" placeholder="Leave a comment here" style="border-radius: 8px;" id="floatingTextarea"></textarea>
+ 
+</div>
+						  <button type="submit" style="    color: #fff;
+    background-color: #446b8d;
+	margin-top:20px;
+    border-color: #000000;
+    border-radius: 8px;" class="btn btn-primary">Submit your feedback</button>
+						</form>
+					</div>
+				</div>
 			</div>
 			<!-- footer -->
 			<footer>
