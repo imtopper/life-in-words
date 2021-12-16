@@ -1,0 +1,683 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E79D416F-C64F-479C-9B24-1FFA4ACD6FC3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Poetry_Site1</RootNamespace>
+    <AssemblyName>Poetry Site1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin_Home\Admin_Home.aspx" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-utilities.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-utilities.min.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap.rtl.css" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.esm.js" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fa-brands.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fa-brands.min.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fa-regular.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fa-regular.min.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fa-solid.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fa-solid.min.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fontawesome-all.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fontawesome-all.min.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fontawesome.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\css\fontawesome.min.css" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\css\material-design-iconic-font.css" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\css\material-design-iconic-font.min.css" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\css\materialdesignicons.min.css" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="Admin_Home\css\icons\themify-icons\fonts\themify.svg" />
+    <Content Include="Admin_Home\css\icons\themify-icons\ie7\ie7.css" />
+    <Content Include="Admin_Home\css\icons\themify-icons\ie7\ie7.js" />
+    <Content Include="Admin_Home\css\icons\themify-icons\themify-icons.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\css\weather-icons-core.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\css\weather-icons-variables.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\css\weather-icons-wind.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\css\weather-icons-wind.min.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\css\weather-icons.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\css\weather-icons.min.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-beaufort.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-day.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-direction.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-misc.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-moon.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-neutral.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-night.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-time.css" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\css\variables-wind-names.css" />
+    <Content Include="Admin_Home\css\style.css" />
+    <Content Include="Admin_Home\css\style.min.css" />
+    <Content Include="Admin_Home\dashboard.html" />
+    <Content Include="Admin_Home\js\app-style-switcher.js" />
+    <Content Include="Admin_Home\js\custom.js" />
+    <Content Include="Admin_Home\js\pages\dashboards\dashboard1.js" />
+    <Content Include="Admin_Home\js\sidebarmenu.js" />
+    <Content Include="Admin_Home\js\waves.js" />
+    <Content Include="Admin_Home\plugins\bower_components\chartist-plugin-tooltips\dist\chartist-plugin-tooltip.css" />
+    <Content Include="Admin_Home\plugins\bower_components\chartist-plugin-tooltips\dist\chartist-plugin-tooltip.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\chartist\dist\chartist.min.css" />
+    <Content Include="Admin_Home\plugins\bower_components\chartist\dist\chartist.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\counterup\jquery.counterup.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\gmaps.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\gmaps.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\jquery.gmaps.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.controls.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.core.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.events.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.geofences.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.geometry.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.layers.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.map_types.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.markers.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.native_extensions.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.overlays.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.routes.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.static.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.streetview.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.styles.js" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\lib\gmaps.utils.js" />
+    <Content Include="Admin_Home\plugins\bower_components\jquery-sparkline\jquery.charts-sparkline.js" />
+    <Content Include="Admin_Home\plugins\bower_components\jquery-sparkline\jquery.sparkline.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\jquery\dist\core.js" />
+    <Content Include="Admin_Home\plugins\bower_components\jquery\dist\jquery.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\jquery\dist\jquery.slim.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\perfect-scrollbar\dist\css\perfect-scrollbar.min.css" />
+    <Content Include="Admin_Home\plugins\bower_components\perfect-scrollbar\dist\js\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\perfect-scrollbar\dist\js\perfect-scrollbar.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\perfect-scrollbar\dist\perfect-scrollbar.common.js" />
+    <Content Include="Admin_Home\plugins\bower_components\perfect-scrollbar\dist\perfect-scrollbar.esm.js" />
+    <Content Include="Admin_Home\plugins\bower_components\perfect-scrollbar\dist\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\perfect-scrollbar\dist\perfect-scrollbar.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\popper.js\dist\esm\popper-utils.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\popper.js\dist\esm\popper.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\popper.js\dist\popper-utils.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\popper.js\dist\popper.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\popper.js\dist\umd\popper-utils.min.js" />
+    <Content Include="Admin_Home\plugins\bower_components\popper.js\dist\umd\popper.min.js" />
+    <Content Include="Admin_Home\plugins\images\custom-select.png" />
+    <Content Include="Admin_Home\plugins\images\favicon.png" />
+    <Content Include="Admin_Home\plugins\images\large\img1.jpg" />
+    <Content Include="Admin_Home\plugins\images\logo-icon.png" />
+    <Content Include="Admin_Home\plugins\images\logo-light-icon.png" />
+    <Content Include="Admin_Home\plugins\images\logo-light-text.png" />
+    <Content Include="Admin_Home\plugins\images\logo-text.png" />
+    <Content Include="Admin_Home\plugins\images\users\1-old.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\1.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\1.png" />
+    <Content Include="Admin_Home\plugins\images\users\2.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\2.png" />
+    <Content Include="Admin_Home\plugins\images\users\3.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\3.png" />
+    <Content Include="Admin_Home\plugins\images\users\4.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\5.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\6.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\7.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\8.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\agent.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\agent2.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\arijit.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\d1.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\d2.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\d3.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\d4.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\d5.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\genu.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\govinda.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\hritik.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\pawandeep.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\profile.png" />
+    <Content Include="Admin_Home\plugins\images\users\ritesh.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\sonu.jpg" />
+    <Content Include="Admin_Home\plugins\images\users\varun.jpg" />
+    <Content Include="Admin_Login.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Daily_Posts.aspx" />
+    <Content Include="favicon\favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\back.jpg" />
+    <Content Include="img\blog\1.jpg" />
+    <Content Include="img\blog\2.jpg" />
+    <Content Include="img\blog\3.jpg" />
+    <Content Include="img\blog\4.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="MyCaptcha.aspx" />
+    <Content Include="Extra_Image\tree.png" />
+    <Content Include="SA_Home\Create_Admin.aspx" />
+    <Content Include="SA_Home\css\bootstrap.css" />
+    <Content Include="SA_Home\css\bootstrap.min.css" />
+    <Content Include="SA_Home\css\font-awesome.min.css" />
+    <Content Include="SA_Home\css\style.css" />
+    <Content Include="SA_Home\fonts\fontawesome-webfont.svg" />
+    <Content Include="SA_Home\img\back.jpg" />
+    <Content Include="SA_Home\img\blog\1.jpg" />
+    <Content Include="SA_Home\img\blog\2.jpg" />
+    <Content Include="SA_Home\img\blog\3.jpg" />
+    <Content Include="SA_Home\img\blog\4.jpg" />
+    <Content Include="SA_Home\img\logo.png" />
+    <Content Include="SA_Home\js\bootstrap.js" />
+    <Content Include="SA_Home\js\bootstrap.min.js" />
+    <Content Include="SA_Home\js\custom.js" />
+    <Content Include="SA_Home\js\html5shiv.js" />
+    <Content Include="SA_Home\js\jquery.js" />
+    <Content Include="SA_Home\js\respond.min.js" />
+    <Content Include="SA_Login.aspx" />
+    <Content Include="User_Login.aspx" />
+    <Content Include="Poet_Video.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="User_Home\WelcomeNew1.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Home\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Home\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Home\Admin_Home.aspx.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Home\Admin_Home.aspx.designer.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Daily_Posts.aspx.cs">
+      <DependentUpon>Daily_Posts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Daily_Posts.aspx.designer.cs">
+      <DependentUpon>Daily_Posts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyCaptcha.aspx.cs">
+      <DependentUpon>MyCaptcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCaptcha.aspx.designer.cs">
+      <DependentUpon>MyCaptcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SA_Home\Create_Admin.aspx.cs">
+      <DependentUpon>Create_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SA_Home\Create_Admin.aspx.designer.cs">
+      <DependentUpon>Create_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SA_Home\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SA_Home\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SA_Login.aspx.cs">
+      <DependentUpon>SA_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SA_Login.aspx.designer.cs">
+      <DependentUpon>SA_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Login.aspx.cs">
+      <DependentUpon>User_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Login.aspx.designer.cs">
+      <DependentUpon>User_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poet_Video.aspx.cs">
+      <DependentUpon>Poet_Video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poet_Video.aspx.designer.cs">
+      <DependentUpon>Poet_Video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Home\WelcomeNew1.aspx.cs">
+      <DependentUpon>WelcomeNew1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Home\WelcomeNew1.aspx.designer.cs">
+      <DependentUpon>WelcomeNew1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Admin_Home\Admin.Master" />
+    <Content Include="Admin_Home\bootstrap\dist\.DS_Store" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.js.map" />
+    <Content Include="Admin_Home\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Include="Admin_Home\css\.DS_Store" />
+    <Content Include="Admin_Home\css\icons\.DS_Store" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\fa-brands.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\fa-regular.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\fa-solid.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\fontawesome.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_animated.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_bordered-pulled.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_core.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_fixed-width.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_icons.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_larger.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_list.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_mixins.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_rotated-flipped.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_screen-reader.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_stacked.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\less\_variables.less" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\fa-brands.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\fa-regular.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\fa-solid.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\fontawesome.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_animated.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_core.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_icons.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_larger.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_list.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_mixins.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_stacked.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\scss\_variables.scss" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Admin_Home\css\icons\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="Admin_Home\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="Admin_Home\css\icons\themify-icons\fonts\themify.eot" />
+    <Content Include="Admin_Home\css\icons\themify-icons\fonts\themify.ttf" />
+    <Content Include="Admin_Home\css\icons\themify-icons\fonts\themify.woff" />
+    <Content Include="Admin_Home\css\icons\themify-icons\themify-icons.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\fonts\weathericons-regular-webfont.eot" />
+    <Content Include="Admin_Home\css\icons\weather-icons\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="Admin_Home\css\icons\weather-icons\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="Admin_Home\css\icons\weather-icons\fonts\weathericons-regular-webfont.woff2" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-beaufort.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-day.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-direction.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-misc.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-moon-aliases.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-moon.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-neutral.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-night.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-time.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-wind-aliases.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-wind-degrees.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-classes\classes-wind.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-beaufort.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-day.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-direction.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-misc.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-moon.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-neutral.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-night.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-time.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\icon-variables\variables-wind-names.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\mappings\wi-forecast-io.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\mappings\wi-owm.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\mappings\wi-wmo4680.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\mappings\wi-yahoo.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\weather-icons-classes.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\weather-icons-core.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\weather-icons-variables.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\weather-icons-wind.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\weather-icons-wind.min.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\weather-icons.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\less\weather-icons.min.less" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-beaufort.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-day.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-direction.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-misc.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-moon-aliases.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-moon.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-neutral.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-night.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-time.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-wind-aliases.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-wind-degrees.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-classes\classes-wind.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-beaufort.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-day.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-direction.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-misc.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-moon.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-neutral.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-night.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-time.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\icon-variables\variables-wind-names.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\mappings\wi-forecast-io.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\mappings\wi-owm.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\mappings\wi-wmo4680.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\mappings\wi-yahoo.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\weather-icons-classes.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\weather-icons-core.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\weather-icons-variables.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\weather-icons-wind.min.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\weather-icons-wind.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\weather-icons.min.scss" />
+    <Content Include="Admin_Home\css\icons\weather-icons\sass\weather-icons.scss" />
+    <Content Include="Admin_Home\plugins\.DS_Store" />
+    <Content Include="Admin_Home\plugins\bower_components\.DS_Store" />
+    <Content Include="Admin_Home\plugins\bower_components\gmaps\gmaps.min.js.map" />
+    <Content Include="Admin_Home\plugins\images\.DS_Store" />
+    <Content Include="Admin_Home\scss\.DS_Store" />
+    <Content Include="Admin_Home\scss\bootstrap\.DS_Store" />
+    <Content Include="Admin_Home\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\bootstrap-utilities.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_floating-labels.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_form-check.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_form-control.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_form-range.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_form-select.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_form-text.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_input-group.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_labels.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\forms\_validation.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\helpers\_clearfix.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\helpers\_colored-links.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\helpers\_position.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\helpers\_ratio.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\helpers\_stretched-link.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\helpers\_text-truncation.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\helpers\_visually-hidden.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_container.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_table-variants.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_utilities.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\mixins\_visually-hidden.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\utilities\_api.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_accordion.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_alert.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_badge.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_button-group.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_buttons.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_card.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_carousel.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_close.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_containers.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_forms.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_functions.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_grid.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_helpers.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_images.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_list-group.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_mixins.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_modal.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_nav.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_navbar.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_pagination.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_popover.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_progress.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_reboot.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_root.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_spinners.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_tables.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_toasts.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_transitions.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_type.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_utilities.scss" />
+    <Content Include="Admin_Home\scss\bootstrap\_variables.scss" />
+    <Content Include="Admin_Home\scss\components.scss" />
+    <Content Include="Admin_Home\scss\core\.DS_Store" />
+    <Content Include="Admin_Home\scss\core\animation\animation.scss" />
+    <Content Include="Admin_Home\scss\core\breadcrumb\breadcrumb.scss" />
+    <Content Include="Admin_Home\scss\core\buttons\buttons.scss" />
+    <Content Include="Admin_Home\scss\core\core.scss" />
+    <Content Include="Admin_Home\scss\core\extra\extra.scss" />
+    <Content Include="Admin_Home\scss\core\layout\layout.scss" />
+    <Content Include="Admin_Home\scss\core\loader\spinner.scss" />
+    <Content Include="Admin_Home\scss\core\scafholdings\scafholding.scss" />
+    <Content Include="Admin_Home\scss\core\sidebar\sidebar.scss" />
+    <Content Include="Admin_Home\scss\core\topbar\header.scss" />
+    <Content Include="Admin_Home\scss\core\topbar\notify.scss" />
+    <Content Include="Admin_Home\scss\core\wave-effects\wave-effects.scss" />
+    <Content Include="Admin_Home\scss\custom.scss" />
+    <Content Include="Admin_Home\scss\mixins\padding-margin.scss" />
+    <Content Include="Admin_Home\scss\responsive.scss" />
+    <Content Include="Admin_Home\scss\style.scss" />
+    <Content Include="Admin_Home\scss\theme-colors\theme-colors.scss" />
+    <Content Include="Admin_Home\scss\variable.scss" />
+    <Content Include="Admin_Home\scss\widgets\comments.scss" />
+    <Content Include="Admin_Home\scss\widgets\feeds.scss" />
+    <Content Include="Admin_Home\scss\widgets\profile.scss" />
+    <Content Include="Admin_Home\scss\widgets\steamline.scss" />
+    <Content Include="Admin_Home\scss\widgets\widgets.scss" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="SA_Home\fonts\fontawesome-webfont.eot" />
+    <Content Include="SA_Home\fonts\fontawesome-webfont.ttf" />
+    <Content Include="SA_Home\fonts\fontawesome-webfont.woff" />
+    <Content Include="SA_Home\fonts\FontAwesome.otf" />
+    <None Include="SA_Home\packages.config" />
+    <Content Include="SA_Home\Site2.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65449</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65449/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
